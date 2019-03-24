@@ -1,7 +1,7 @@
 {
-  "name": "library-ts-boilerplate",
+  "name": "iban_validator",
   "version": "1.0.0",
-  "description": "NPM Library boilerplate with TS",
+  "description": "IBAN validator for lc-form-validator",
   "keywords": [
     "lc-form-validation",
     "form",
@@ -35,7 +35,7 @@
   "jsnext:main": "es/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lemoncode/lc-validator-dni.git"
+    "url": "git+https://github.com/Lemoncode/lc-validator-iban.git"
   },
   "scripts": {
     "clean": "rimraf build",
