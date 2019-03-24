@@ -285,7 +285,7 @@ const isValidIBAN = (input: string): boolean => {
 
 export const VALIDATION_TYPE = "IBAN";
 
-export const validateIBAN = (value: any): FieldValidationResult => {
+export const validateIBAN:FieldValidationFunction = (value: any): FieldValidationResult => {
   /*
 Check that the total IBAN length is correct as per the country. If not, the IBAN is invalid
 Move the four initial characters to the end of the string
