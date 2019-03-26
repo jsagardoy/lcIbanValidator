@@ -10,14 +10,15 @@
     "react",
     "component"
   ],
-  "homepage": "https://github.com/Lemoncode/lc-validator-dni#readme",
+  "homepage": "https://github.com/jsagardoy/lcIbanValidator#readme",
   "bugs": {
-    "url": "https://github.com/Lemoncode/lc-validator-dni/issues"
+    "url": "https://github.com/jsagardoy/lcIbanValidator/issues"
   },
   "license": "MIT",
   "author": "Lemoncode",
   "contributors": [
-    "Javier Calzado <javi.calzado@lemoncode.net> (https://github.com/fjcalzado)"
+    "Javier Calzado <javi.calzado@lemoncode.net> (https://github.com/fjcalzado)",
+    "Jehú Sagardoy (https://github.com/jsagardoy)"
   ],
   "files": [
     "dist",
@@ -35,7 +36,7 @@
   "jsnext:main": "es/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lemoncode/lc-validator-iban.git"
+    "url": "git+https://github.com/jsagardoy/lcIbanValidator"
   },
   "scripts": {
     "clean": "rimraf build",
