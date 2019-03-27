@@ -115,9 +115,7 @@ describe('validateIBAN', () => {
     const noSpacesTestIBAN = 'gb82west12345698765432';
     // Act
     const result = validateIBAN(testIBAN);
-    const resultNoSpaces = validateIBAN(
-      noSpacesTestIBAN
-    );
+    const resultNoSpaces = validateIBAN(noSpacesTestIBAN);
     // Assert
     expect(result.succeeded).toBeTruthy();
     expect(resultNoSpaces.succeeded).toBeTruthy();

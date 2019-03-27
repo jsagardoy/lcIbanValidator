@@ -5,18 +5,23 @@ const defaultInvalidMessage = 'Invalid IBAN';
 
 const ibanPattern = /^[a-zA-Z]{2}[a-zA-Z0-9]*$/;
 
-const isString = (input: any) => typeof input === 'string' || input instanceof String;
-const setupString = (input: string): string => input.replace(/\s/g, '').toUpperCase();
+const isString = (input: any) =>
+  typeof input === 'string' || input instanceof String;
+const setupString = (input: string): string =>
+  input.replace(/\s/g, '').toUpperCase();
 const getCountry = (input: string) => input.substring(0, 2);
 const isValidString = (input: any): boolean => ibanPattern.test(input);
 const moveToBack = (input: string): string =>
   input.substring(4, input.length) + input.substring(0, 4);
-const transformLetterToNumber = (input: string): string => (input.charCodeAt(0) - 55).toString();
+const transformLetterToNumber = (input: string): string =>
+  (input.charCodeAt(0) - 55).toString();
 
 const parseIBAN = (input: string): string => {
   let result: string = '';
   for (const item of input) {
-    /\d/.test(item) ? (result = result + item) : (result = result + transformLetterToNumber(item));
+    /\d/.test(item)
+      ? (result = result + item)
+      : (result = result + transformLetterToNumber(item));
   }
 
   return result;
@@ -52,7 +57,10 @@ export const validateIBAN = (value: any): FieldValidationResult => {
     const fixedValue: string = setupString(value);
     const country: string = getCountry(fixedValue);
 
-    if (fixedValue.length === getLengthCountry(country) && getLengthCountry(country) !== 0) {
+    if (
+      fixedValue.length === getLengthCountry(country) &&
+      getLengthCountry(country) !== 0
+    ) {
       const transformedIBAN: string = moveToBack(fixedValue);
       const onlyNumbersIban: string = parseIBAN(transformedIBAN);
       valid = isValidIBAN(onlyNumbersIban);
