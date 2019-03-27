@@ -5,7 +5,7 @@ This is a [lc-form-validation](https://github.com/Lemoncode/lcFormValidation) ad
 
 Please, refer to [lc-form-validation](https://github.com/Lemoncode/lcFormValidation) to know more.
 
-## Example codesandbox
+## CodeSandbox example
 [codesandbox example](https://codesandbox.io/s/l58136v14z)
 ## License
 [MIT](./LICENSE)
