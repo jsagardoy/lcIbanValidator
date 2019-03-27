@@ -1,4 +1,4 @@
-import { FieldValidationFunction, FieldValidationResult } from 'lc-form-validation';
+import { FieldValidationResult } from 'lc-form-validation';
 import { getLengthCountry } from './switchCountry';
 
 const defaultInvalidMessage = 'Invalid IBAN';
@@ -45,7 +45,7 @@ export const VALIDATION_TYPE = 'IBAN';
  * If the remainder is 1, the check digit test is passed and the IBAN might be valid.
  * @param value
  */
-export const validateIBAN: FieldValidationFunction = (value: any): FieldValidationResult => {
+export const validateIBAN = (value: any): FieldValidationResult => {
   let valid: boolean = false;
 
   if (isString(value) && isValidString) {
