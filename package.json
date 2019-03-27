@@ -1,5 +1,5 @@
 {
-  "name": "iban_validator",
+  "name": "lc-validator-iban",
   "version": "1.0.0",
   "description": "IBAN validator for lc-form-validator",
   "keywords": [
