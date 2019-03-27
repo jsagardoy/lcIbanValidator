@@ -3,6 +3,6 @@
  * @param value Input value to be interpreted as IBAN
  */
 
-import FieldValidationResult from 'lc-form-validation';
+import {FieldValidationResult} from 'lc-form-validation';
 export declare const VALIDATION_TYPE : string;
 export declare function validateIBAN(value: any) : FieldValidationResult;
