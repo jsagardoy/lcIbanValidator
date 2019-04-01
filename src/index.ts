@@ -1,1 +1,1 @@
-export { validateIBAN,VALIDATION_TYPE } from './iban';
+export { validateIBAN, VALIDATION_TYPE } from './iban';
