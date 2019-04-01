@@ -1,4 +1,5 @@
 var path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const capitalizeString = s => s.charAt(0).toUpperCase() + s.slice(1);
 
@@ -27,6 +28,7 @@ module.exports = env => {
       },
       libraryTarget: 'umd',
     },
+    externals: 'lc-form-validation',
     module: {
       rules: [
         {
@@ -36,5 +38,6 @@ module.exports = env => {
         },
       ],
     },
+    plugins: mode === 'production' ? [new CompressionPlugin()] : []
   };
 };
