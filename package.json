@@ -1,6 +1,6 @@
 {
   "name": "lc-validator-iban",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "IBAN validator for lc-form-validator",
   "keywords": [
     "lc-form-validation",
@@ -57,10 +57,10 @@
     "release": "npm publish ./build",
     "release:local": "npm install ./build -g"
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "lc-form-validation": "^2.0.0"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
@@ -76,6 +76,7 @@
     "copyfiles": "^2.1.0",
     "cross-env": "^5.2.0",
     "jest": "^23.6.0",
+    "lc-form-validation": "^2.0.0",
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
     "ts-jest": "^23.10.1",
